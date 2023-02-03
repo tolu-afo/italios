@@ -8,4 +8,6 @@ Will do again? Yes.
 
 Tune in Monday, Wednesday, Friday, for Twitch Stream 5pm - 9pm EST
 
+twitch.tv/ToluAfo
+
 - Tolu of the ToluAfo Channel
