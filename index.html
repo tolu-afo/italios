@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                background-color: blanchedalmond;
+            }
+            .page-container {
+                margin: auto;
+                width: 800px;
+            }
+            .top-section {
+                color: black;
+                text-align: center;
+                padding-bottom: 20px;
+                padding-top: 40px;
+            }
+            
+            .contact {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .top-bar {
+                background-color: #333;
+                overflow: hidden;
+                margin: auto;
+                position: fixed;
+                top:0;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .top-bar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 13px 16px;
+                text-decoration: none;
+            }
+
+            .top-bar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .top-bar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            
+            .title-card img {
+                object-fit: contain;
+                pointer-events: none;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .title-card-div {
+                display: inline-block;
+                overflow: hidden;
+                position: relative;
+                width: 100%
+            }
+
+
+            .info-section {
+                padding-bottom: 20px;
+            }
+
+            .info-section ul {
+                padding-inline-start: 13px; 
+            }
+
+            .menu-section .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                grid-auto-rows: minmax(100px, auto);
+            }
+
+            .grid-item img {
+                width:250px;
+                height:250px;
+            }
+
+            .contact-section {
+                display:flex;
+                justify-content: space-between;
+                padding-bottom: 80px;
+                margin-top: 60px;
+            }
+
+            .contact-section .contact-container {
+                padding: 10px 20px 0 20px;
+                width: 156px;
+                height: 200px
+            }
+
+            .green {
+                background-color:#3C6D22;
+            }
+            .white {
+                background-color: #FBFEF9;
+            }
+            .red {
+                background-color: #F21B3F;
+            }
+            
+        /* green: #3C6D22
+        white: #FBFEF9
+        red:   #F21B3F  */
+        </style>
+    </head>
+    <body>
+        <section class="bar-section">
+            <div class="top-bar">
+                <div style="display:flex;justify-content:center;">
+                    <a href="#intro">Info</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        <div class="page-container">
+            <section id="top" class="top-section">
+                <div class="image-container">
+                    <div class="title-card">
+                        <img src="./images/dining_image.webp">
+                        <div class="title-card-div">   
+                            <h1>Welcome to Italio's Restaurant & Cafe</h1>
+                            <h2>Delicious Italian Cuisine and Authentic Coffee</h2>
+                            <div class="contact">
+                                <div>Tel: <a href="(123) 456-7890">(123) 456-7890</a></div>
+                                <div>Email: <a href="info@italios.com"> info@italios.com</a></div>
+                            </div>
+                    </div>
+                </div>
+            </section>           
+            <section id="intro" class="info-section">
+                <h1 style="text-align:center;">About Us</h1> 
+                <div>
+                    <p><b>Welcome to Italio's your local Italian Cuisine Restaurant.</b> Founded in 1949 in Brooklyn, New York. We are a family run restaraunt and we pride ourselves on our connection to our sicilian roots. We hope that these cultural influences shine through our food, and bring joy and warmth to those who consume.</p>
+                </div>
+                <p>Restaurant Specials:</p>
+                <ul>
+                    <li>Earlybird Specials: 7:30 am - 10 am </li>
+                    <li>Lunch Specials: 11 am - 3 pm</li>
+                </ul>
+            </section>
+            <section id="menu" class="menu-section">
+                <h2 style="text-align:center;">Menu</h2>
+
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="./images/pizza.jpg" alt="prod-img"><br>
+                        Margheria Pizza 
+                        <br>$14.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/IMG-917.jpg" alt="prod-img"><br>
+                        Spaghetti & Meatballs
+                        <br>$17.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/chick-ris.jpg" alt="prod-img"><br>
+                        Chicken Risotto
+                        <br>$12.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/charcuterie_board.jpg" alt="prod-img"><br>
+                        Charcuteria Board
+                        <br>$19.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/las.jpg" alt="prod-img"><br>
+                        Beef Lasagna
+                        <br>$21.49
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/pesto-pasta.jpg" alt="prod-img"><br>
+                        Pesto Pasta
+                        <br>$12.49
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/spinach_las.jpg" alt="prod-img"><br>
+                        Spinach Lasagna
+                        <br>$17.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="/images/ravioli.jpg" alt="prod-img"><br>
+                        Beef Ravioli
+                        <br>$15.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/gnoc.jpg" alt="prod-img"><br>
+                        Gnocchhi
+                        <br>$9.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/cake.png" alt="prod-img"><br>
+                        Coffee cake
+                        <br>$13.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/can.jpg" alt="prod-img"><br>
+                        Cannoli
+                        <br>$16.99
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/panacotta.jpg" alt="prod-img"><br>
+                        Pana Cotta
+                        <br>$14.99
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact-section">
+                <div class="contact-container green" style="color:white;padding-right:85px;">
+                    Address
+                    <p>12 Third Street, Brooklyn, NY, USA 00001</p>
+                </div>
+                <div class="contact-container white" style="padding-left:85px;padding-right:40px;">
+                    Hours
+                    <p>Mon - Fri: <br> 9:30 am - 10:00 pm</p>
+                    <p>Saturday: <br> 7:30 am - 11:00 pm</p>
+                    <p>Sunday: <br> 11:00 am - 7:00 pm</p>
+                </div>
+                <div class="contact-container red" style="padding-left:80px;color:white;">
+                    Contact Us
+                    <p>Tel: (123) 456-7890</p>
+                    <p>email: info@italios.com</p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
